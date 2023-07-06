@@ -1,0 +1,126 @@
+/*SHOP*/
+.catalog-shop {
+  padding: 45px 0 75px;
+}
+.top-filter {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.top-filter .woocommerce-result-count {
+  float: left;
+  margin-bottom: 0;
+}
+.top-filter .woocommerce-ordering {
+  float: right;
+}
+.woocommerce-ordering select {
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  padding: 5px;
+}
+.all-products {
+  overflow: hidden;
+  margin-right: -3px;
+  border-bottom: 1px solid #ebeced;
+}
+.item-product {
+  width: 33.3333%;
+  float: left;
+  border: 1px solid #ebeced;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  text-align: center;
+}
+.item-product.first {
+  margin-left: 0;
+}
+.item-product .product-thumb {
+  display: table;
+  height: 230px;
+  width: 100%;
+  transition: .3s;
+}
+.item-product .product-thumb:hover {
+  opacity: 0.8;
+}
+.item-product .product-thumb .midd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.info-product {
+  padding: 15px 20px 30px;
+}
+.all-products .item-product h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.item-product h4 a {
+  color: #333;
+}
+.item-product h4 a:hover {
+  color: #16bdfa;
+}
+.item-product .rating {
+  color: #16bdfa;
+  margin-bottom: 5px;
+}
+.item-product .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+}
+.catalog-shop .pagination {
+  border: none;
+}
+@media (max-width: 991px) {
+  .item-product {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .item-product {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop.css.map */

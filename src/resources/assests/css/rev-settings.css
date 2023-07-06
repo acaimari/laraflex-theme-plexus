@@ -1,0 +1,96 @@
+html {
+  overflow-x: hidden;
+  padding: 0!important;
+  background: #fff;
+  margin: 0 !important;
+}
+.fullwidthbanner-container {
+  width: 100%!important;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  color: #fff;
+}
+.tp-caption {
+  font-size: 14px;
+}
+.custom-size-1 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #333;
+  line-height: 1;
+  margin: 0;
+  padding: 5px 10px;
+}
+.custom-size-2 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #16bdfa;
+  background: rgba(60, 69, 77, 0.8);
+  padding: 0 20px;
+}
+.custom-size-3 {
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+}
+.custom-size-4 {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.custom-font-4 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 300;
+  font-style: italic;
+  color: #888888;
+  font-weight: normal;
+}
+.tp-caption .btn-border {
+  color: #fff;
+  border-color: #fff;
+}
+span.color {
+  color: #ffae4e;
+}
+@media only screen and (max-width: 767px) {
+  a.btn-slider,
+  a.btn-slider.btn-small {
+    padding: 6px 14px 5px;
+    font-size: 12px;
+    min-width: auto;
+    margin-right: 5px;
+  }
+  a.btn-border-slider {
+    padding: 4px 12px 3px;
+    font-size: 12px;
+    min-width: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  a.btn-slider,
+  a.btn-slider.btn-small {
+    padding: 4px 12px 3px;
+    font-size: 8px;
+    min-width: auto;
+    margin-right: 5px;
+  }
+  a.btn-border-slider {
+    padding: 2px 10px 1px;
+    font-size: 8px;
+    min-width: auto;
+  }
+}
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */
+/*# sourceMappingURL=rev-settings.css.map */

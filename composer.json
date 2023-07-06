@@ -1,0 +1,22 @@
+{
+    "name": "caimari/laraflex-theme-plexus",
+    "description": "Tema Plexus para LaraFlex",
+    "type": "laraflex-theme",
+    "version": "1.0.1",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Caimari\\LaraFlexThemePlexus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Caimari\\LaraFlexThemePlexus\\PlexusServiceProvider"
+            ]
+        }
+    }
+}

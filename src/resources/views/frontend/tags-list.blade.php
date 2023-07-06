@@ -1,0 +1,195 @@
+@extends('plexus::layouts.app')
+
+@section('content')
+@inject('route', 'Illuminate\Support\Facades\Route')
+
+
+<style>
+.thumbnail {
+    width: 425px;
+    height: 200px;
+    object-fit: cover; /* Para recortar la imagen y mantener la relación de aspecto */
+}
+</style>
+
+
+<div style="height: 20px;"></div>
+
+
+
+<div class="page-content page-sidebar">
+    <div class="container"> 
+        <div class="row">
+            @if ($page->sidebar_position == 'left' || $page->sidebar_position == 'right')
+                <!-- Si la posición de la barra lateral es 'left', incluir la barra lateral a la izquierda (3 columnas) -->
+                @if ($page->sidebar_position == 'left')
+                    <div class="col-md-3">
+                        @include('plexus::partials.left-sidebar')
+                    </div>
+                @endif
+
+                <!-- El contenido principal siempre ocupa 9 columnas en el caso de que haya una barra lateral -->
+                <div class="col-md-9">
+                
+						
+						
+                <div class="content-primary">
+                                <div class="title-page">
+                                <div class="title-page">
+                                        <h3>Site Tags</h3>
+                                </div>
+
+
+                                @php
+    $chunks = $tags->chunk(2);
+@endphp
+
+@foreach ($chunks as $chunk)
+    <div class="row">
+        @foreach ($chunk as $tag)
+            <div class="col-md-6">
+                <article class="item-post">
+                    <div class="post-thumb">
+                        <a href="{{ route('tag.show', $tag->slug) }}">
+                            <img class="thumbnail" src="{{ $tag->image ? $tag->image : '/storage/default/thumbnail-default.gif' }}" alt="">
+                        </a>
+                    </div>
+                    <div class="post-meta">
+                        <div class="meta">
+                            <h4><a href="{{ route('tag.show', $tag->slug) }}">{{ $tag->title }}</a></h4>
+                            <p><i class="fa fa-clock-o"></i> Posted on {{ $tag->created_at->format('d M. Y') }} under Tags</p>
+                        </div>
+                    </div>
+                    
+                </article>
+            </div>
+        @endforeach
+    </div>
+@endforeach
+
+
+
+
+
+                                </div>
+
+                                <!--
+                                <div class="blog-nav">
+                                    <ul class="pagination none-style">
+                                        <li><a href=""><i class="fa fa-angle-double-left"></i> First</a></li>  
+                                        <li><a href=""><i class="fa fa-angle-left"></i> Back</a></li>                               
+                                        <li><span class="page-numbers current">01</span></li>
+                                        <li><a class="page-numbers" href="#">02</a></li>
+                                        <li><a class="page-numbers" href="#">03</a></li>
+                                        <li><a class="page-numbers" href="#">04</a></li>
+                                        <li><a class="page-numbers" href="#">05</a></li>
+                                        <li><a class="page-numbers" href="#">06</a></li>
+                                        <li><a class="page-numbers" href="#">07</a></li>
+                                        <li><a href="">Forward <i class="fa fa-angle-right"></i></a></li>
+                                        <li><a href="">Last <i class="fa fa-angle-double-right"></i></a></li>                                            
+                                    </ul>                                   
+                                </div>
+                            </div> -->
+							
+
+
+
+
+
+
+             
+                                
+
+
+                                
+                                
+            
+                    </div>                
+                </div>
+
+                <!-- Si la posición de la barra lateral es 'right', incluir la barra lateral a la derecha (3 columnas) -->
+                @if ($page->sidebar_position == 'right')
+                    <div class="col-md-3">
+                        @include('plexus::partials.right-sidebar')
+                    </div>
+                @endif
+            @else
+
+
+ 
+    
+                <!-- Si no hay barra lateral, el contenido principal ocupa todas las columnas (12 columnas) -->
+                <div class="col-md-12">
+
+                <div class="content-primary">
+                                
+                                @if(config('theme.page_title_active'))
+                                    <div class="title-page">
+                                        <h3>{{ $page->title }}</h3>
+                                    </div>
+                                @endif
+                                
+                                    <div class="content-inner">
+
+                                    @if(config('theme.header_image_active'))
+                                      <!--  <section>
+                                            <img src="images/pages/about.jpg" alt="">
+                                        </section> -->
+                                    @endif
+
+                                        <section class="padding page-default">
+                                        {!! $page->content !!}
+                                        </section>
+                            
+                        </div>
+                    </div>                
+
+                </div>
+            @endif
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+@endsection
+
+
+
+
+
